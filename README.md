@@ -1,8 +1,16 @@
 # PortSwigger Web Security Academy Labs
 
-A structured collection of hands-on web application security lab writeups, vulnerability analyses, and practical exploitation notes from the PortSwigger Web Security Academy.
+A structured collection of hands-on, authorized PortSwigger Web Security Academy lab reports. Each report records the methodology, evidence, impact, and remediation for one specific lab.
+
+General reusable concepts are maintained separately in the [Cybersecurity Knowledge Base](https://github.com/Francisco0604/cybersecurity-knowledge-base).
 
 ---
+
+## Progress
+
+| Category | Completed labs | Status |
+| :--- | :--- | :--- |
+| Access Control | 2 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -22,6 +30,8 @@ A structured collection of hands-on web application security lab writeups, vulne
 portswigger-labs/
 │
 ├── README.md
+├── templates/
+│   └── lab-report-template.md
 ├── screenshots/
 │   ├── 01-unprotected-admin-functionality/
 │   │   ├── 01-lab-homepage.png
@@ -44,4 +54,4 @@ portswigger-labs/
 ## 👤 Author
 
 **Francisco Elroy Afonso**  
-*Aspiring Penetration Tester / Cybersecurity Analyst*
+*Aspiring Penetration Tester*
