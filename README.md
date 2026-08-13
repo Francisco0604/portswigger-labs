@@ -10,7 +10,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
-| Access Control | 3 | In progress |
+| Access Control | 4 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -24,6 +24,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 03 — User Role Controlled by Request Parameter](access-control/03-user-role-controlled-by-request-parameter.md)
   - **Vulnerability**: Broken Access Control / Client-Controlled Authorization (Cookie Role Tampering)
   - **Concepts**: Cookie Manipulation (`Admin=true`), Burp Proxy Intercept, Authorization Boundary Testing
+- [Lab 04 — User Role Can Be Modified in User Profile](access-control/04-user-role-can-be-modified-in-user-profile.md)
+  - **Vulnerability**: Broken Access Control / Mass Assignment
+  - **Concepts**: JSON Request Testing, Mass Assignment, Privilege Escalation
 
 ---
 
@@ -51,10 +54,16 @@ portswigger-labs/
 │       ├── 03-admin-true-intercept.png
 │       ├── 04-admin-panel.png
 │       └── 05-lab-solved.png
+│   ├── 04-user-role-modified-in-profile/
+│       ├── 01-profile-update-request.png
+│       ├── 02-roleid-2-request.png
+│       ├── 03-admin-panel.png
+│       └── 04-lab-solved.png
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
     ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
-    └── 03-user-role-controlled-by-request-parameter.md
+    ├── 03-user-role-controlled-by-request-parameter.md
+    └── 04-user-role-can-be-modified-in-user-profile.md
 ```
 
 ---
