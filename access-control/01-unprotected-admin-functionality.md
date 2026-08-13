@@ -24,7 +24,7 @@ During normal application exploration, no administrative functionality was expos
 
 I then inspected the application's `robots.txt` file.
 
-![robots.txt](../screenshots/02-robots-txt.png)
+![robots.txt](../screenshots/01-unprotected-admin-functionality/02-robots-txt.png)
 
 The response contained:
 
@@ -77,7 +77,7 @@ GET /administrator-panel/delete?username=carlos HTTP/2
 Host: [LAB-DOMAIN]
 ```
 
-![Delete request](../screenshots/03-delete-request.png)
+![Delete request](../screenshots/01-unprotected-admin-functionality/03-delete-request.png)
 
 The request can be broken down as:
 
@@ -105,7 +105,7 @@ I forwarded the intercepted request through Burp Proxy.
 
 The user `carlos` was successfully deleted and the PortSwigger lab was marked as solved.
 
-![Lab solved](../screenshots/04-lab-solved.png)
+![Lab solved](../screenshots/01-unprotected-admin-functionality/04-lab-solved.png)
 
 ---
 
@@ -187,13 +187,13 @@ Administrative URLs should not rely on obscurity, hidden links, or `robots.txt` 
 
 ### Screenshot 1 — Lab Homepage
 
-![Lab homepage](../screenshots/01-lab-homepage.png)
+![Lab homepage](../screenshots/01-unprotected-admin-functionality/01-lab-homepage.png)
 
 Shows the application's normal shopping interface.
 
 ### Screenshot 2 — robots.txt
 
-![robots.txt](../screenshots/02-robots-txt.png)
+![robots.txt](../screenshots/01-unprotected-admin-functionality/02-robots-txt.png)
 
 Shows the discovery of:
 
@@ -203,7 +203,7 @@ Shows the discovery of:
 
 ### Screenshot 3 — Delete Request
 
-![Delete request](../screenshots/03-delete-request.png)
+![Delete request](../screenshots/01-unprotected-admin-functionality/03-delete-request.png)
 
 Shows the intercepted request:
 
@@ -213,7 +213,7 @@ GET /administrator-panel/delete?username=carlos HTTP/2
 
 ### Screenshot 4 — Lab Solved
 
-![Lab solved](../screenshots/04-lab-solved.png)
+![Lab solved](../screenshots/01-unprotected-admin-functionality/04-lab-solved.png)
 
 Shows successful completion of the PortSwigger lab.
 
