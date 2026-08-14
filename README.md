@@ -10,7 +10,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
-| Access Control | 5 | In progress |
+| Access Control | 6 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -30,6 +30,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 05 — User ID Controlled by Request Parameter](access-control/05-user-id-controlled-by-request-parameter.md)
   - **Vulnerability**: Broken Access Control / IDOR
   - **Concepts**: Object-Level Authorization, Parameter Tampering, Horizontal Privilege Escalation
+- [Lab 06 — User ID Controlled by Request Parameter, with Unpredictable User IDs](access-control/06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md)
+  - **Vulnerability**: Broken Access Control / IDOR
+  - **Concepts**: GUID Discovery, Repeater Testing, Horizontal Privilege Escalation
 
 ---
 
@@ -51,7 +54,7 @@ portswigger-labs/
 │   │   ├── 01-leaked-admin-url.png
 │   │   ├── 02-admin-panel.png
 │   │   └── 03-lab-solved.png
-│   └── 03-user-role-controlled-by-request-parameter/
+│   ├── 03-user-role-controlled-by-request-parameter/
 │       ├── 01-lab-homepage.png
 │       ├── 02-admin-false-401.png
 │       ├── 03-admin-true-intercept.png
@@ -62,17 +65,24 @@ portswigger-labs/
 │       ├── 02-roleid-2-request.png
 │       ├── 03-admin-panel.png
 │       └── 04-lab-solved.png
-│   └── 05-user-id-controlled-by-request-parameter/
+│   ├── 05-user-id-controlled-by-request-parameter/
 │       ├── 01-wiener-account-request.png
 │       ├── 02-carlos-account-request.png
 │       ├── 03-carlos-api-key.png
 │       └── 04-lab-solved.png
+│   └── 06-user-id-controlled-by-request-parameter-unpredictable-ids/
+│       ├── 01-wiener-account-guid.png
+│       ├── 02-carlos-guid-discovered.png
+│       ├── 03-carlos-account-repeater.png
+│       ├── 04-carlos-api-key.png
+│       └── 05-lab-solved.png
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
     ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
     ├── 03-user-role-controlled-by-request-parameter.md
     ├── 04-user-role-can-be-modified-in-user-profile.md
-    └── 05-user-id-controlled-by-request-parameter.md
+    ├── 05-user-id-controlled-by-request-parameter.md
+    └── 06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md
 ```
 
 ---
