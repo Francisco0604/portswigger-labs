@@ -10,7 +10,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
-| Access Control | 6 | In progress |
+| Access Control | 7 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -33,6 +33,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 06 — User ID Controlled by Request Parameter, with Unpredictable User IDs](access-control/06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md)
   - **Vulnerability**: Broken Access Control / IDOR
   - **Concepts**: GUID Discovery, Repeater Testing, Horizontal Privilege Escalation
+- [Lab 07 — User ID Controlled by Request Parameter with Data Leakage in Redirect](access-control/07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md)
+  - **Vulnerability**: Broken Access Control / Sensitive Data Leakage
+  - **Concepts**: Redirect Response Inspection, Response-Body Leakage, Horizontal Privilege Escalation
 
 ---
 
@@ -76,13 +79,18 @@ portswigger-labs/
 │       ├── 03-carlos-account-repeater.png
 │       ├── 04-carlos-api-key.png
 │       └── 05-lab-solved.png
+│   └── 07-user-id-controlled-by-request-parameter-data-leakage-redirect/
+│       ├── 01-carlos-request.png
+│       ├── 02-redirect-response-data-leakage.png
+│       └── 03-lab-solved.png
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
     ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
     ├── 03-user-role-controlled-by-request-parameter.md
     ├── 04-user-role-can-be-modified-in-user-profile.md
     ├── 05-user-id-controlled-by-request-parameter.md
-    └── 06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md
+    ├── 06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md
+    └── 07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md
 ```
 
 ---
