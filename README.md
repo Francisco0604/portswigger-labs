@@ -10,7 +10,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
-| Access Control | 7 | In progress |
+| Access Control | 8 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -36,6 +36,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 07 — User ID Controlled by Request Parameter with Data Leakage in Redirect](access-control/07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md)
   - **Vulnerability**: Broken Access Control / Sensitive Data Leakage
   - **Concepts**: Redirect Response Inspection, Response-Body Leakage, Horizontal Privilege Escalation
+- [Lab 08 — User ID Controlled by Request Parameter with Password Disclosure](access-control/08-user-id-controlled-by-request-parameter-with-password-disclosure.md)
+  - **Vulnerability**: Broken Access Control / Sensitive Information Disclosure
+  - **Concepts**: Password Disclosure, HTML Response Inspection, Credential Exposure
 
 ---
 
@@ -83,6 +86,11 @@ portswigger-labs/
 │       ├── 01-carlos-request.png
 │       ├── 02-redirect-response-data-leakage.png
 │       └── 03-lab-solved.png
+│   └── 08-user-id-controlled-by-request-parameter-password-disclosure/
+│       ├── 01-admin-redirect.png
+│       ├── 02-administrator-password-response.png
+│       ├── 03-admin-access.png
+│       └── 04-lab-solved.png
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
     ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
@@ -90,7 +98,8 @@ portswigger-labs/
     ├── 04-user-role-can-be-modified-in-user-profile.md
     ├── 05-user-id-controlled-by-request-parameter.md
     ├── 06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md
-    └── 07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md
+    ├── 07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md
+    └── 08-user-id-controlled-by-request-parameter-with-password-disclosure.md
 ```
 
 ---
