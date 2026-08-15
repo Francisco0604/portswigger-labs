@@ -11,7 +11,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
 | Access Control | 13 | Completed |
-| Authentication | 1 | In progress |
+| Authentication | 2 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -60,6 +60,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 01 — Username Enumeration via Different Responses](labs/Authentication/01-username-enumeration-via-different-responses.md)
   - **Vulnerability**: Username Enumeration and Password Brute Force
   - **Concepts**: Burp Intruder (Sniper), Burp Repeater, Response Analysis, Credential Testing
+- [Lab 02 — 2FA Simple Bypass](labs/Authentication/02-2fa-simple-bypass.md)
+  - **Vulnerability**: Two-Factor Authentication Bypass
+  - **Concepts**: Authentication State Analysis, Direct Navigation Bypass, MFA Workflow Flaws
 
 ---
 
@@ -87,11 +90,15 @@ portswigger-labs/
 │   │   ├── 12-multi-step-process-no-access-control/
 │   │   └── 13-referer-based-access-control/
 │   └── Authentication/
-│       └── 01-username-enumeration/
-│           ├── 01-username-intruder-results.png
-│           ├── 02-app01-response-confirmation.png
-│           ├── 03-password-intruder-results.png
-│           └── 04-account-access-and-lab-solved.png
+│       ├── 01-username-enumeration/
+│       │   ├── 01-username-intruder-results.png
+│       │   ├── 02-app01-response-confirmation.png
+│       │   ├── 03-password-intruder-results.png
+│       │   └── 04-account-access-and-lab-solved.png
+│       └── 02-2fa-simple-bypass/
+│           ├── 01-authentication-flow.png
+│           ├── 02-access-without-mfa.png
+│           └── 03-carlos-account-and-lab-solved.png
 ├── access-control/
 │   ├── 01-unprotected-admin-functionality.md
 │   ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
@@ -108,7 +115,8 @@ portswigger-labs/
 │   └── 13-referer-based-access-control.md
 └── labs/
     └── Authentication/
-        └── 01-username-enumeration-via-different-responses.md
+        ├── 01-username-enumeration-via-different-responses.md
+        └── 02-2fa-simple-bypass.md
 ```
 
 ---
