@@ -10,7 +10,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
-| Access Control | 12 | In progress |
+| Access Control | 13 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -51,6 +51,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 12 — Multi-Step Process with No Access Control on One Step](access-control/12-multi-step-process-with-no-access-control-on-one-step.md)
   - **Vulnerability**: Broken Access Control / Missing Authorization on Multi-Step Process
   - **Concepts**: Workflow Sub-Step Bypass, `confirmed=true` Tampering, Vertical Privilege Escalation
+- [Lab 13 — Referer-Based Access Control](access-control/13-referer-based-access-control.md)
+  - **Vulnerability**: Broken Access Control / Referer-Based Access Control Bypass
+  - **Concepts**: Client-Controlled Header Spoofing, `Referer` Validation Bypass, Vertical Privilege Escalation
 
 ---
 
@@ -117,9 +120,13 @@ portswigger-labs/
 │   │   ├── 01-admin-promotion-request.png
 │   │   ├── 02-get-method-bypass.png
 │   │   └── 03-wiener-admin-access-and-lab-solved.png
-│   └── 12-multi-step-process-no-access-control/
-│       ├── 01-admin-multi-step-process.png
-│       ├── 02-wiener-direct-step-bypass.png
+│   ├── 12-multi-step-process-no-access-control/
+│   │   ├── 01-admin-multi-step-process.png
+│   │   ├── 02-wiener-direct-step-bypass.png
+│   │   └── 03-wiener-admin-access-and-lab-solved.png
+│   └── 13-referer-based-access-control/
+│       ├── 01-admin-promotion-request.png
+│       ├── 02-wiener-referer-bypass.png
 │       └── 03-wiener-admin-access-and-lab-solved.png
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
@@ -133,7 +140,8 @@ portswigger-labs/
     ├── 09-insecure-direct-object-references.md
     ├── 10-url-based-access-control-can-be-circumvented.md
     ├── 11-method-based-access-control-can-be-circumvented.md
-    └── 12-multi-step-process-with-no-access-control-on-one-step.md
+    ├── 12-multi-step-process-with-no-access-control-on-one-step.md
+    └── 13-referer-based-access-control.md
 ```
 
 ---
