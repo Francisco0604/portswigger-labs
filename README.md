@@ -10,7 +10,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
-| Access Control | 11 | In progress |
+| Access Control | 12 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -48,6 +48,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 11 — Method-Based Access Control Can Be Circumvented](access-control/11-method-based-access-control-can-be-circumvented.md)
   - **Vulnerability**: Broken Access Control / Method-Based Access Control Bypass
   - **Concepts**: HTTP Verb Tampering, `POST` to `GET` Conversion, Vertical Privilege Escalation
+- [Lab 12 — Multi-Step Process with No Access Control on One Step](access-control/12-multi-step-process-with-no-access-control-on-one-step.md)
+  - **Vulnerability**: Broken Access Control / Missing Authorization on Multi-Step Process
+  - **Concepts**: Workflow Sub-Step Bypass, `confirmed=true` Tampering, Vertical Privilege Escalation
 
 ---
 
@@ -110,9 +113,13 @@ portswigger-labs/
 │   │   ├── 02-x-original-url-bypass.png
 │   │   ├── 03-admin-panel.png
 │   │   └── 04-lab-solved.png
-│   └── 11-method-based-access-control-circumvented/
-│       ├── 01-admin-promotion-request.png
-│       ├── 02-get-method-bypass.png
+│   ├── 11-method-based-access-control-circumvented/
+│   │   ├── 01-admin-promotion-request.png
+│   │   ├── 02-get-method-bypass.png
+│   │   └── 03-wiener-admin-access-and-lab-solved.png
+│   └── 12-multi-step-process-no-access-control/
+│       ├── 01-admin-multi-step-process.png
+│       ├── 02-wiener-direct-step-bypass.png
 │       └── 03-wiener-admin-access-and-lab-solved.png
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
@@ -125,7 +132,8 @@ portswigger-labs/
     ├── 08-user-id-controlled-by-request-parameter-with-password-disclosure.md
     ├── 09-insecure-direct-object-references.md
     ├── 10-url-based-access-control-can-be-circumvented.md
-    └── 11-method-based-access-control-can-be-circumvented.md
+    ├── 11-method-based-access-control-can-be-circumvented.md
+    └── 12-multi-step-process-with-no-access-control-on-one-step.md
 ```
 
 ---
