@@ -10,7 +10,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
-| Access Control | 9 | In progress |
+| Access Control | 10 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -42,6 +42,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 09 — Insecure Direct Object References](access-control/09-insecure-direct-object-references.md)
   - **Vulnerability**: Broken Access Control / IDOR
   - **Concepts**: Object-Level Authorization, Transcript Access, Sensitive Data Exposure
+- [Lab 10 — URL-Based Access Control Can Be Circumvented](access-control/10-url-based-access-control-can-be-circumvented.md)
+  - **Vulnerability**: Broken Access Control / Front-End and Back-End Access Control Discrepancy
+  - **Concepts**: `X-Original-URL` Header, Front-End Proxy Bypass, Administrative Endpoint Access
 
 ---
 
@@ -94,10 +97,15 @@ portswigger-labs/
 │       ├── 02-administrator-password-response.png
 │       ├── 03-admin-access.png
 │       └── 04-lab-solved.png
-│   └── 09-insecure-direct-object-references/
-│       ├── 01-chat-transcript-request.png
-│       ├── 02-modified-transcript-request.png
-│       ├── 03-leaked-credentials.png
+│   ├── 09-insecure-direct-object-references/
+│   │   ├── 01-chat-transcript-request.png
+│   │   ├── 02-modified-transcript-request.png
+│   │   ├── 03-leaked-credentials.png
+│   │   └── 04-lab-solved.png
+│   └── 10-url-based-access-control-circumvented/
+│       ├── 01-direct-admin-blocked.png
+│       ├── 02-x-original-url-bypass.png
+│       ├── 03-admin-panel.png
 │       └── 04-lab-solved.png
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
@@ -108,7 +116,8 @@ portswigger-labs/
     ├── 06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md
     ├── 07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md
     ├── 08-user-id-controlled-by-request-parameter-with-password-disclosure.md
-    └── 09-insecure-direct-object-references.md
+    ├── 09-insecure-direct-object-references.md
+    └── 10-url-based-access-control-can-be-circumvented.md
 ```
 
 ---
