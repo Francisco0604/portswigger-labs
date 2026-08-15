@@ -10,7 +10,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
-| Access Control | 10 | In progress |
+| Access Control | 11 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -45,6 +45,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 10 — URL-Based Access Control Can Be Circumvented](access-control/10-url-based-access-control-can-be-circumvented.md)
   - **Vulnerability**: Broken Access Control / Front-End and Back-End Access Control Discrepancy
   - **Concepts**: `X-Original-URL` Header, Front-End Proxy Bypass, Administrative Endpoint Access
+- [Lab 11 — Method-Based Access Control Can Be Circumvented](access-control/11-method-based-access-control-can-be-circumvented.md)
+  - **Vulnerability**: Broken Access Control / Method-Based Access Control Bypass
+  - **Concepts**: HTTP Verb Tampering, `POST` to `GET` Conversion, Vertical Privilege Escalation
 
 ---
 
@@ -102,11 +105,15 @@ portswigger-labs/
 │   │   ├── 02-modified-transcript-request.png
 │   │   ├── 03-leaked-credentials.png
 │   │   └── 04-lab-solved.png
-│   └── 10-url-based-access-control-circumvented/
-│       ├── 01-direct-admin-blocked.png
-│       ├── 02-x-original-url-bypass.png
-│       ├── 03-admin-panel.png
-│       └── 04-lab-solved.png
+│   ├── 10-url-based-access-control-circumvented/
+│   │   ├── 01-direct-admin-blocked.png
+│   │   ├── 02-x-original-url-bypass.png
+│   │   ├── 03-admin-panel.png
+│   │   └── 04-lab-solved.png
+│   └── 11-method-based-access-control-circumvented/
+│       ├── 01-admin-promotion-request.png
+│       ├── 02-get-method-bypass.png
+│       └── 03-wiener-admin-access-and-lab-solved.png
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
     ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
@@ -117,7 +124,8 @@ portswigger-labs/
     ├── 07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md
     ├── 08-user-id-controlled-by-request-parameter-with-password-disclosure.md
     ├── 09-insecure-direct-object-references.md
-    └── 10-url-based-access-control-can-be-circumvented.md
+    ├── 10-url-based-access-control-can-be-circumvented.md
+    └── 11-method-based-access-control-can-be-circumvented.md
 ```
 
 ---
