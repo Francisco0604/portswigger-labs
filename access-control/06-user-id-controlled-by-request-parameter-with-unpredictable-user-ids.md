@@ -40,7 +40,7 @@ This showed that blog functionality could expose the GUID associated with a user
 GET /my-account?id=<wiener-GUID> HTTP/2
 ```
 
-![Wiener account GUID](../screenshots/06-user-id-controlled-by-request-parameter-unpredictable-ids/01-wiener-account-guid.png)
+![Wiener account GUID](../screenshots/Access_Control/06-user-id-controlled-by-request-parameter-unpredictable-ids/01-wiener-account-guid.png)
 
 ---
 
@@ -54,7 +54,7 @@ I searched the application blog content for a post created by `carlos`. The post
 
 This provided a way to discover Carlos's otherwise unpredictable user identifier.
 
-![Carlos GUID discovered](../screenshots/06-user-id-controlled-by-request-parameter-unpredictable-ids/02-carlos-guid-discovered.png)
+![Carlos GUID discovered](../screenshots/Access_Control/06-user-id-controlled-by-request-parameter-unpredictable-ids/02-carlos-guid-discovered.png)
 
 ---
 
@@ -68,7 +68,7 @@ GET /my-account?id=<carlos-GUID> HTTP/2
 
 No other part of the request was intentionally changed.
 
-![Carlos account in Repeater](../screenshots/06-user-id-controlled-by-request-parameter-unpredictable-ids/03-carlos-account-repeater.png)
+![Carlos account in Repeater](../screenshots/Access_Control/06-user-id-controlled-by-request-parameter-unpredictable-ids/03-carlos-account-repeater.png)
 
 ---
 
@@ -76,11 +76,11 @@ No other part of the request was intentionally changed.
 
 The server returned Carlos's account information while the request used my authenticated session. The response contained Carlos's API key.
 
-![Carlos API key](../screenshots/06-user-id-controlled-by-request-parameter-unpredictable-ids/04-carlos-api-key.png)
+![Carlos API key](../screenshots/Access_Control/06-user-id-controlled-by-request-parameter-unpredictable-ids/04-carlos-api-key.png)
 
 The API key was submitted to the PortSwigger lab as the solution.
 
-![Lab solved](../screenshots/06-user-id-controlled-by-request-parameter-unpredictable-ids/05-lab-solved.png)
+![Lab solved](../screenshots/Access_Control/06-user-id-controlled-by-request-parameter-unpredictable-ids/05-lab-solved.png)
 
 ---
 

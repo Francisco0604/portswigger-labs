@@ -78,7 +78,7 @@ Location: /admin
 
 The crucial difference between the two requests was the addition of the parameter `confirmed=true`. Step 2 was the actual execution endpoint that performed the state-changing role upgrade in the database.
 
-![Administrator multi-step process](../screenshots/12-multi-step-process-no-access-control/01-admin-multi-step-process.png)
+![Administrator multi-step process](../screenshots/Access_Control/12-multi-step-process-no-access-control/01-admin-multi-step-process.png)
 
 ---
 
@@ -100,7 +100,7 @@ Content-Type: application/x-www-form-urlencoded
 action=upgrade&confirmed=true&username=wiener
 ```
 
-![Direct access to unprotected step](../screenshots/12-multi-step-process-no-access-control/02-wiener-direct-step-bypass.png)
+![Direct access to unprotected step](../screenshots/Access_Control/12-multi-step-process-no-access-control/02-wiener-direct-step-bypass.png)
 
 ---
 
@@ -110,7 +110,7 @@ The server accepted the request directly, returned `HTTP/2 302 Found` (redirecti
 
 I then accessed `/admin` using Wiener's session and confirmed full administrator privileges and role management capabilities. The lab registered as solved.
 
-![Wiener administrator access and lab solved](../screenshots/12-multi-step-process-no-access-control/03-wiener-admin-access-and-lab-solved.png)
+![Wiener administrator access and lab solved](../screenshots/Access_Control/12-multi-step-process-no-access-control/03-wiener-admin-access-and-lab-solved.png)
 
 ---
 

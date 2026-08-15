@@ -40,7 +40,7 @@ Parameter value: wiener
 
 The response contained information belonging to the authenticated user, including an API key.
 
-![Wiener account request](../screenshots/05-user-id-controlled-by-request-parameter/01-wiener-account-request.png)
+![Wiener account request](../screenshots/Access_Control/05-user-id-controlled-by-request-parameter/01-wiener-account-request.png)
 
 ---
 
@@ -74,7 +74,7 @@ GET /my-account?id=carlos HTTP/2
 
 The session and other request components were left unchanged.
 
-![Carlos account request](../screenshots/05-user-id-controlled-by-request-parameter/02-carlos-account-request.png)
+![Carlos account request](../screenshots/Access_Control/05-user-id-controlled-by-request-parameter/02-carlos-account-request.png)
 
 ---
 
@@ -90,11 +90,11 @@ The response contained Carlos's account information, including his API key. This
 
 The API key is redacted in the public evidence.
 
-![Carlos API key redacted](../screenshots/05-user-id-controlled-by-request-parameter/03-carlos-api-key.png)
+![Carlos API key redacted](../screenshots/Access_Control/05-user-id-controlled-by-request-parameter/03-carlos-api-key.png)
 
 The API key was submitted to the PortSwigger lab as the solution.
 
-![Lab solved](../screenshots/05-user-id-controlled-by-request-parameter/04-lab-solved.png)
+![Lab solved](../screenshots/Access_Control/05-user-id-controlled-by-request-parameter/04-lab-solved.png)
 
 ---
 

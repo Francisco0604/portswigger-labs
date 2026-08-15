@@ -43,7 +43,7 @@ The JavaScript revealed the otherwise non-obvious administrative endpoint:
 /admin-zttnb3
 ```
 
-![Leaked admin URL](../screenshots/02-unprotected-admin-functionality-unpredictable-url/01-leaked-admin-url.png)
+![Leaked admin URL](../screenshots/Access_Control/02-unprotected-admin-functionality-unpredictable-url/01-leaked-admin-url.png)
 
 ---
 
@@ -65,7 +65,7 @@ I manually requested:
 
 The server returned the administrative panel without requiring administrator authorization. The panel exposed administrative functionality, including user management and the ability to delete users. The user `carlos` was present in the panel.
 
-![Admin panel](../screenshots/02-unprotected-admin-functionality-unpredictable-url/02-admin-panel.png)
+![Admin panel](../screenshots/Access_Control/02-unprotected-admin-functionality-unpredictable-url/02-admin-panel.png)
 
 ---
 
@@ -75,7 +75,7 @@ The administrative functionality was accessible to a user who was not authorized
 
 The lab was then successfully completed.
 
-![Lab solved](../screenshots/02-unprotected-admin-functionality-unpredictable-url/03-lab-solved.png)
+![Lab solved](../screenshots/Access_Control/02-unprotected-admin-functionality-unpredictable-url/03-lab-solved.png)
 
 ---
 

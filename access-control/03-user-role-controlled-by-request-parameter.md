@@ -132,7 +132,7 @@ Cookie: Admin=true
 
 The request was then tested through Burp Proxy by modifying the intercepted request before forwarding it.
 
-![Admin=true request](../screenshots/03-user-role-controlled-by-request-parameter/03-admin-true-intercept.png)
+![Admin=true request](../screenshots/Access_Control/03-user-role-controlled-by-request-parameter/03-admin-true-intercept.png)
 
 The server responded with:
 
@@ -142,7 +142,7 @@ HTTP/2 200 OK
 
 and the browser displayed the administrative panel.
 
-![Admin panel](../screenshots/03-user-role-controlled-by-request-parameter/04-admin-panel.png)
+![Admin panel](../screenshots/Access_Control/03-user-role-controlled-by-request-parameter/04-admin-panel.png)
 
 This confirmed that the application was trusting the client-controlled `Admin` cookie when determining whether the user had administrator privileges.
 
@@ -168,7 +168,7 @@ The panel provided functionality to manage users, including the ability to delet
 
 The user `carlos` was deleted using the administrative functionality, completing the lab.
 
-![Lab solved](../screenshots/03-user-role-controlled-by-request-parameter/05-lab-solved.png)
+![Lab solved](../screenshots/Access_Control/03-user-role-controlled-by-request-parameter/05-lab-solved.png)
 
 ---
 
@@ -280,19 +280,19 @@ Changing a client-side cookie should never be sufficient to elevate privileges.
 
 ### Screenshot 1 — Lab Homepage
 
-![Lab homepage](../screenshots/03-user-role-controlled-by-request-parameter/01-lab-homepage.png)
+![Lab homepage](../screenshots/Access_Control/03-user-role-controlled-by-request-parameter/01-lab-homepage.png)
 
 Shows the normal application before attempting privilege escalation.
 
 ### Screenshot 2 — Admin Access Denied
 
-![Admin access denied](../screenshots/03-user-role-controlled-by-request-parameter/02-admin-false-401.png)
+![Admin access denied](../screenshots/Access_Control/03-user-role-controlled-by-request-parameter/02-admin-false-401.png)
 
 Shows the `/admin` request with the original `Admin=false` value and the resulting `401 Unauthorized` response.
 
 ### Screenshot 3 — Modified Admin Cookie
 
-![Modified admin cookie](../screenshots/03-user-role-controlled-by-request-parameter/03-admin-true-intercept.png)
+![Modified admin cookie](../screenshots/Access_Control/03-user-role-controlled-by-request-parameter/03-admin-true-intercept.png)
 
 Shows the intercepted `/admin` request after changing:
 
@@ -308,13 +308,13 @@ Admin=true
 
 ### Screenshot 4 — Administrative Panel
 
-![Admin panel](../screenshots/03-user-role-controlled-by-request-parameter/04-admin-panel.png)
+![Admin panel](../screenshots/Access_Control/03-user-role-controlled-by-request-parameter/04-admin-panel.png)
 
 Shows that the modified request resulted in access to the administrator panel.
 
 ### Screenshot 5 — Lab Solved
 
-![Lab solved](../screenshots/03-user-role-controlled-by-request-parameter/05-lab-solved.png)
+![Lab solved](../screenshots/Access_Control/03-user-role-controlled-by-request-parameter/05-lab-solved.png)
 
 Shows successful completion of the PortSwigger lab.
 

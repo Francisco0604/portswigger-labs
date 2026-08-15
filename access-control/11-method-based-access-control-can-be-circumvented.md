@@ -54,7 +54,7 @@ HTTP/2 302 Found
 Location: /admin
 ```
 
-![Administrator promotion request](../screenshots/11-method-based-access-control-circumvented/01-admin-promotion-request.png)
+![Administrator promotion request](../screenshots/Access_Control/11-method-based-access-control-circumvented/01-admin-promotion-request.png)
 
 This established the expected baseline behavior for administrative role changes using `POST`.
 
@@ -104,7 +104,7 @@ Location: /admin
 
 The request was accepted and executed even though Wiener was not originally an administrator. The access-control mechanism failed to enforce role checks on `GET` requests to `/admin-roles`.
 
-![GET method access-control bypass](../screenshots/11-method-based-access-control-circumvented/02-get-method-bypass.png)
+![GET method access-control bypass](../screenshots/Access_Control/11-method-based-access-control-circumvented/02-get-method-bypass.png)
 
 ---
 
@@ -116,7 +116,7 @@ I then accessed `/admin` using Wiener's session and confirmed that the account n
 
 The lab registered as successfully solved.
 
-![Wiener administrator access and lab solved](../screenshots/11-method-based-access-control-circumvented/03-wiener-admin-access-and-lab-solved.png)
+![Wiener administrator access and lab solved](../screenshots/Access_Control/11-method-based-access-control-circumvented/03-wiener-admin-access-and-lab-solved.png)
 
 ---
 

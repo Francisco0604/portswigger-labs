@@ -71,7 +71,7 @@ This request returned `HTTP/2 200 OK` and the administrator's account page.
 
 The `/administrator` response contained the administrator's password directly in the HTML. Burp allowed the underlying response to be inspected even though the browser rendered the password field as masked.
 
-![Administrator password response](../screenshots/08-user-id-controlled-by-request-parameter-password-disclosure/02-administrator-password-response.png)
+![Administrator password response](../screenshots/Access_Control/08-user-id-controlled-by-request-parameter-password-disclosure/02-administrator-password-response.png)
 
 The response exposed a credential that should never have been disclosed to the client.
 
@@ -81,11 +81,11 @@ The response exposed a credential that should never have been disclosed to the c
 
 I used the recovered administrator credentials to authenticate as the administrator. The administrator account then provided access to the functionality required by the lab.
 
-![Admin access](../screenshots/08-user-id-controlled-by-request-parameter-password-disclosure/03-admin-access.png)
+![Admin access](../screenshots/Access_Control/08-user-id-controlled-by-request-parameter-password-disclosure/03-admin-access.png)
 
 The administrative functionality was used to delete `carlos`.
 
-![Lab solved](../screenshots/08-user-id-controlled-by-request-parameter-password-disclosure/04-lab-solved.png)
+![Lab solved](../screenshots/Access_Control/08-user-id-controlled-by-request-parameter-password-disclosure/04-lab-solved.png)
 
 ---
 
@@ -93,7 +93,7 @@ The administrative functionality was used to delete `carlos`.
 
 The `/admin` endpoint returned a redirect to `/login`, but `/administrator` returned the administrator account page with a `200 OK` response.
 
-![Admin redirect](../screenshots/08-user-id-controlled-by-request-parameter-password-disclosure/01-admin-redirect.png)
+![Admin redirect](../screenshots/Access_Control/08-user-id-controlled-by-request-parameter-password-disclosure/01-admin-redirect.png)
 
 This demonstrated that `/admin` was not the endpoint used to obtain the administrator's account information.
 

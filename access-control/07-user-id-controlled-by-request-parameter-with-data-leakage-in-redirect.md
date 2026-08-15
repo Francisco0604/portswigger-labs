@@ -47,7 +47,7 @@ Location: /login
 
 However, inspecting the complete HTTP response in Burp revealed that the response body still contained Carlos's account information.
 
-![Carlos request](../screenshots/07-user-id-controlled-by-request-parameter-data-leakage-redirect/01-carlos-request.png)
+![Carlos request](../screenshots/Access_Control/07-user-id-controlled-by-request-parameter-data-leakage-redirect/01-carlos-request.png)
 
 ---
 
@@ -72,7 +72,7 @@ but the response body also contained account data:
 
 The browser would normally follow the `Location: /login` header, which can make the leaked information difficult to notice during normal browsing. Burp Suite allowed the complete response body to be inspected.
 
-![Redirect response with leaked data](../screenshots/07-user-id-controlled-by-request-parameter-data-leakage-redirect/02-redirect-response-data-leakage.png)
+![Redirect response with leaked data](../screenshots/Access_Control/07-user-id-controlled-by-request-parameter-data-leakage-redirect/02-redirect-response-data-leakage.png)
 
 ---
 
@@ -82,7 +82,7 @@ Although the server instructed the browser to redirect to `/login`, sensitive in
 
 The API key was submitted to the PortSwigger lab as the solution.
 
-![Lab solved](../screenshots/07-user-id-controlled-by-request-parameter-data-leakage-redirect/03-lab-solved.png)
+![Lab solved](../screenshots/Access_Control/07-user-id-controlled-by-request-parameter-data-leakage-redirect/03-lab-solved.png)
 
 ---
 

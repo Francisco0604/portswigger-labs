@@ -29,7 +29,7 @@ GET /download-transcript/2.txt HTTP/2
 
 The request was made from the chat functionality and included the current authenticated session.
 
-![Chat transcript request](../screenshots/09-insecure-direct-object-references/01-chat-transcript-request.png)
+![Chat transcript request](../screenshots/Access_Control/09-insecure-direct-object-references/01-chat-transcript-request.png)
 
 ---
 
@@ -43,7 +43,7 @@ GET /download-transcript/1.txt HTTP/2
 
 This tested whether the server verified that the authenticated user was authorized to access the requested transcript.
 
-![Modified transcript request](../screenshots/09-insecure-direct-object-references/02-modified-transcript-request.png)
+![Modified transcript request](../screenshots/Access_Control/09-insecure-direct-object-references/02-modified-transcript-request.png)
 
 ---
 
@@ -59,11 +59,11 @@ Content-Disposition: attachment; filename="1.txt"
 
 The response body contained a chat transcript in which a user disclosed a password. The credential was exposed because the application returned a transcript belonging to another user without enforcing object-level authorization.
 
-![Leaked credential](../screenshots/09-insecure-direct-object-references/03-leaked-credentials.png)
+![Leaked credential](../screenshots/Access_Control/09-insecure-direct-object-references/03-leaked-credentials.png)
 
 The exposed credential was used as required by the lab, and the PortSwigger lab was solved.
 
-![Lab solved](../screenshots/09-insecure-direct-object-references/04-lab-solved.png)
+![Lab solved](../screenshots/Access_Control/09-insecure-direct-object-references/04-lab-solved.png)
 
 ---
 

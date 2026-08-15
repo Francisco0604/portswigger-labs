@@ -10,7 +10,8 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
-| Access Control | 13 | In progress |
+| Access Control | 13 | Completed |
+| Authentication | 1 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -55,6 +56,11 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
   - **Vulnerability**: Broken Access Control / Referer-Based Access Control Bypass
   - **Concepts**: Client-Controlled Header Spoofing, `Referer` Validation Bypass, Vertical Privilege Escalation
 
+### 🔑 Authentication
+- [Lab 01 — Username Enumeration via Different Responses](labs/Authentication/01-username-enumeration-via-different-responses.md)
+  - **Vulnerability**: Username Enumeration and Password Brute Force
+  - **Concepts**: Burp Intruder (Sniper), Burp Repeater, Response Analysis, Credential Testing
+
 ---
 
 ## 🛠️ Repository Structure
@@ -66,82 +72,43 @@ portswigger-labs/
 ├── templates/
 │   └── lab-report-template.md
 ├── screenshots/
-│   ├── 01-unprotected-admin-functionality/
-│   │   ├── 01-lab-homepage.png
-│   │   ├── 02-robots-txt.png
-│   │   ├── 03-delete-request.png
-│   │   └── 04-lab-solved.png
-│   ├── 02-unprotected-admin-functionality-unpredictable-url/
-│   │   ├── 01-leaked-admin-url.png
-│   │   ├── 02-admin-panel.png
-│   │   └── 03-lab-solved.png
-│   ├── 03-user-role-controlled-by-request-parameter/
-│       ├── 01-lab-homepage.png
-│       ├── 02-admin-false-401.png
-│       ├── 03-admin-true-intercept.png
-│       ├── 04-admin-panel.png
-│       └── 05-lab-solved.png
-│   ├── 04-user-role-modified-in-profile/
-│       ├── 01-profile-update-request.png
-│       ├── 02-roleid-2-request.png
-│       ├── 03-admin-panel.png
-│       └── 04-lab-solved.png
-│   ├── 05-user-id-controlled-by-request-parameter/
-│       ├── 01-wiener-account-request.png
-│       ├── 02-carlos-account-request.png
-│       ├── 03-carlos-api-key.png
-│       └── 04-lab-solved.png
-│   └── 06-user-id-controlled-by-request-parameter-unpredictable-ids/
-│       ├── 01-wiener-account-guid.png
-│       ├── 02-carlos-guid-discovered.png
-│       ├── 03-carlos-account-repeater.png
-│       ├── 04-carlos-api-key.png
-│       └── 05-lab-solved.png
-│   └── 07-user-id-controlled-by-request-parameter-data-leakage-redirect/
-│       ├── 01-carlos-request.png
-│       ├── 02-redirect-response-data-leakage.png
-│       └── 03-lab-solved.png
-│   └── 08-user-id-controlled-by-request-parameter-password-disclosure/
-│       ├── 01-admin-redirect.png
-│       ├── 02-administrator-password-response.png
-│       ├── 03-admin-access.png
-│       └── 04-lab-solved.png
-│   ├── 09-insecure-direct-object-references/
-│   │   ├── 01-chat-transcript-request.png
-│   │   ├── 02-modified-transcript-request.png
-│   │   ├── 03-leaked-credentials.png
-│   │   └── 04-lab-solved.png
-│   ├── 10-url-based-access-control-circumvented/
-│   │   ├── 01-direct-admin-blocked.png
-│   │   ├── 02-x-original-url-bypass.png
-│   │   ├── 03-admin-panel.png
-│   │   └── 04-lab-solved.png
-│   ├── 11-method-based-access-control-circumvented/
-│   │   ├── 01-admin-promotion-request.png
-│   │   ├── 02-get-method-bypass.png
-│   │   └── 03-wiener-admin-access-and-lab-solved.png
-│   ├── 12-multi-step-process-no-access-control/
-│   │   ├── 01-admin-multi-step-process.png
-│   │   ├── 02-wiener-direct-step-bypass.png
-│   │   └── 03-wiener-admin-access-and-lab-solved.png
-│   └── 13-referer-based-access-control/
-│       ├── 01-admin-promotion-request.png
-│       ├── 02-wiener-referer-bypass.png
-│       └── 03-wiener-admin-access-and-lab-solved.png
-└── access-control/
-    ├── 01-unprotected-admin-functionality.md
-    ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
-    ├── 03-user-role-controlled-by-request-parameter.md
-    ├── 04-user-role-can-be-modified-in-user-profile.md
-    ├── 05-user-id-controlled-by-request-parameter.md
-    ├── 06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md
-    ├── 07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md
-    ├── 08-user-id-controlled-by-request-parameter-with-password-disclosure.md
-    ├── 09-insecure-direct-object-references.md
-    ├── 10-url-based-access-control-can-be-circumvented.md
-    ├── 11-method-based-access-control-can-be-circumvented.md
-    ├── 12-multi-step-process-with-no-access-control-on-one-step.md
-    └── 13-referer-based-access-control.md
+│   ├── Access_Control/
+│   │   ├── 01-unprotected-admin-functionality/
+│   │   ├── 02-unprotected-admin-functionality-unpredictable-url/
+│   │   ├── 03-user-role-controlled-by-request-parameter/
+│   │   ├── 04-user-role-modified-in-profile/
+│   │   ├── 05-user-id-controlled-by-request-parameter/
+│   │   ├── 06-user-id-controlled-by-request-parameter-unpredictable-ids/
+│   │   ├── 07-user-id-controlled-by-request-parameter-data-leakage-redirect/
+│   │   ├── 08-user-id-controlled-by-request-parameter-password-disclosure/
+│   │   ├── 09-insecure-direct-object-references/
+│   │   ├── 10-url-based-access-control-circumvented/
+│   │   ├── 11-method-based-access-control-circumvented/
+│   │   ├── 12-multi-step-process-no-access-control/
+│   │   └── 13-referer-based-access-control/
+│   └── Authentication/
+│       └── 01-username-enumeration/
+│           ├── 01-username-intruder-results.png
+│           ├── 02-app01-response-confirmation.png
+│           ├── 03-password-intruder-results.png
+│           └── 04-account-access-and-lab-solved.png
+├── access-control/
+│   ├── 01-unprotected-admin-functionality.md
+│   ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
+│   ├── 03-user-role-controlled-by-request-parameter.md
+│   ├── 04-user-role-can-be-modified-in-user-profile.md
+│   ├── 05-user-id-controlled-by-request-parameter.md
+│   ├── 06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md
+│   ├── 07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md
+│   ├── 08-user-id-controlled-by-request-parameter-with-password-disclosure.md
+│   ├── 09-insecure-direct-object-references.md
+│   ├── 10-url-based-access-control-can-be-circumvented.md
+│   ├── 11-method-based-access-control-can-be-circumvented.md
+│   ├── 12-multi-step-process-with-no-access-control-on-one-step.md
+│   └── 13-referer-based-access-control.md
+└── labs/
+    └── Authentication/
+        └── 01-username-enumeration-via-different-responses.md
 ```
 
 ---

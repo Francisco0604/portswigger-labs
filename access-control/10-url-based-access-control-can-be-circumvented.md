@@ -36,7 +36,7 @@ Content-Type: application/json; charset=utf-8
 "Access denied"
 ```
 
-![Direct admin access blocked](../screenshots/10-url-based-access-control-circumvented/01-direct-admin-blocked.png)
+![Direct admin access blocked](../screenshots/Access_Control/10-url-based-access-control-circumvented/01-direct-admin-blocked.png)
 
 This established that direct requests to `/admin` were intercepted and blocked by the front-end access-control layer (such as a reverse proxy or WAF).
 
@@ -73,7 +73,7 @@ X-Original-URL: /admin
 
 The server returned `HTTP/2 200 OK` and rendered the administrator interface.
 
-![X-Original-URL access-control bypass](../screenshots/10-url-based-access-control-circumvented/02-x-original-url-bypass.png)
+![X-Original-URL access-control bypass](../screenshots/Access_Control/10-url-based-access-control-circumvented/02-x-original-url-bypass.png)
 
 ---
 
@@ -107,7 +107,7 @@ Because the front-end filtering mechanism only inspected the raw URL path `/` wi
 
 With the bypass confirmed, the administrative dashboard became accessible without authentication. The panel provided user-management features, including the ability to delete user accounts.
 
-![Administrator panel](../screenshots/10-url-based-access-control-circumvented/03-admin-panel.png)
+![Administrator panel](../screenshots/Access_Control/10-url-based-access-control-circumvented/03-admin-panel.png)
 
 ---
 
@@ -153,7 +153,7 @@ The application deleted `carlos` and redirected back to `/admin`.
 
 After sending the crafted delete request, the user `carlos` was deleted from the system and the lab was solved.
 
-![Lab solved](../screenshots/10-url-based-access-control-circumvented/04-lab-solved.png)
+![Lab solved](../screenshots/Access_Control/10-url-based-access-control-circumvented/04-lab-solved.png)
 
 ---
 

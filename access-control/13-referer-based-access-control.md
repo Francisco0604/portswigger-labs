@@ -50,7 +50,7 @@ HTTP/2 302 Found
 Location: /admin
 ```
 
-![Administrator promotion request](../screenshots/13-referer-based-access-control/01-admin-promotion-request.png)
+![Administrator promotion request](../screenshots/Access_Control/13-referer-based-access-control/01-admin-promotion-request.png)
 
 Inspection of the request revealed that the application was relying on the client-supplied `Referer` header (`https://[LAB-DOMAIN]/admin`) to determine whether the request originated from an authorized administrative page.
 
@@ -76,7 +76,7 @@ Cookie: session=[WIENER-SESSION-COOKIE]
 Referer: https://[LAB-DOMAIN]/admin
 ```
 
-![Wiener Referer bypass](../screenshots/13-referer-based-access-control/02-wiener-referer-bypass.png)
+![Wiener Referer bypass](../screenshots/Access_Control/13-referer-based-access-control/02-wiener-referer-bypass.png)
 
 ---
 
@@ -86,7 +86,7 @@ The server accepted the request, returned `HTTP/2 302 Found`, and promoted `wien
 
 I then accessed the `/admin` interface using Wiener's session and confirmed full administrator privileges and role management functionality. The lab was successfully completed.
 
-![Wiener administrator access and lab solved](../screenshots/13-referer-based-access-control/03-wiener-admin-access-and-lab-solved.png)
+![Wiener administrator access and lab solved](../screenshots/Access_Control/13-referer-based-access-control/03-wiener-admin-access-and-lab-solved.png)
 
 ---
 
