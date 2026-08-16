@@ -11,7 +11,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
 | Access Control | 13 | Completed |
-| Authentication | 2 | In progress |
+| Authentication | 3 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -63,6 +63,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 02 — 2FA Simple Bypass](labs/Authentication/02-2fa-simple-bypass.md)
   - **Vulnerability**: Two-Factor Authentication Bypass
   - **Concepts**: Authentication State Analysis, Direct Navigation Bypass, MFA Workflow Flaws
+- [Lab 03 — Password Reset Broken Logic](labs/Authentication/03-password-reset-broken-logic.md)
+  - **Vulnerability**: Broken Password-Reset Logic
+  - **Concepts**: Parameter Tampering, Token-to-Account Binding Flaws, Account Takeover
 
 ---
 
@@ -95,9 +98,13 @@ portswigger-labs/
 │       │   ├── 02-app01-response-confirmation.png
 │       │   ├── 03-password-intruder-results.png
 │       │   └── 04-account-access-and-lab-solved.png
-│       └── 02-2fa-simple-bypass/
-│           ├── 01-authentication-flow.png
-│           ├── 02-access-without-mfa.png
+│       ├── 02-2fa-simple-bypass/
+│       │   ├── 01-authentication-flow.png
+│       │   ├── 02-access-without-mfa.png
+│       │   └── 03-carlos-account-and-lab-solved.png
+│       └── 03-password-reset-broken-logic/
+│           ├── 01-password-reset-request.png
+│           ├── 02-modified-reset-request.png
 │           └── 03-carlos-account-and-lab-solved.png
 ├── access-control/
 │   ├── 01-unprotected-admin-functionality.md
@@ -116,7 +123,8 @@ portswigger-labs/
 └── labs/
     └── Authentication/
         ├── 01-username-enumeration-via-different-responses.md
-        └── 02-2fa-simple-bypass.md
+        ├── 02-2fa-simple-bypass.md
+        └── 03-password-reset-broken-logic.md
 ```
 
 ---
