@@ -11,7 +11,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
 | Access Control | 13 | Completed |
-| Authentication | 4 | In progress |
+| Authentication | 5 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -69,6 +69,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 04 — Username Enumeration via Subtly Different Responses](labs/Authentication/04-username-enumeration-via-subtly-different-responses.md)
   - **Vulnerability**: Username Enumeration and Password Brute Force
   - **Concepts**: Burp Intruder (Grep - Extract), Burp Comparer, Response Analysis, Credential Testing
+- [Lab 05 — Username Enumeration via Response Timing](labs/Authentication/05-username-enumeration-via-response-timing.md)
+  - **Vulnerability**: Username Enumeration via Response Timing, IP-Based Rate-Limit Bypass, Password Brute Force
+  - **Concepts**: Response Timing Analysis, `X-Forwarded-For` Header Spoofing, Burp Intruder (Pitchfork), Rate Limiting Bypass
 
 ---
 
@@ -109,10 +112,14 @@ portswigger-labs/
 │       │   ├── 01-password-reset-request.png
 │       │   ├── 02-modified-reset-request.png
 │       │   └── 03-carlos-account-and-lab-solved.png
-│       └── 04-username-enumeration-subtly-different-responses/
-│           ├── 01-grep-extract-username-results.png
-│           ├── 02-amarillo-password-intruder-results.png
-│           └── 03-amarillo-account-and-lab-solved.png
+│       ├── 04-username-enumeration-subtly-different-responses/
+│       │   ├── 01-grep-extract-username-results.png
+│       │   ├── 02-amarillo-password-intruder-results.png
+│       │   └── 03-amarillo-account-and-lab-solved.png
+│       └── 05-username-enumeration-via-response-timing/
+│           ├── 01-xff-rate-limit-bypass.png
+│           ├── 02-an-password-intruder-results.png
+│           └── 03-an-account-and-lab-solved.png
 ├── access-control/
 │   ├── 01-unprotected-admin-functionality.md
 │   ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
@@ -132,7 +139,8 @@ portswigger-labs/
         ├── 01-username-enumeration-via-different-responses.md
         ├── 02-2fa-simple-bypass.md
         ├── 03-password-reset-broken-logic.md
-        └── 04-username-enumeration-via-subtly-different-responses.md
+        ├── 04-username-enumeration-via-subtly-different-responses.md
+        └── 05-username-enumeration-via-response-timing.md
 ```
 
 ---
