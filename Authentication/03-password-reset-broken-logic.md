@@ -53,7 +53,7 @@ new-password-2
 
 The presence of both the reset token and a client-supplied username was the first significant observation.
 
-![Password reset request](../../screenshots/Authentication/03-password-reset-broken-logic/01-password-reset-request.png)
+![Password reset request](../screenshots/Authentication/03-password-reset-broken-logic/01-password-reset-request.png)
 
 ---
 
@@ -131,7 +131,7 @@ POST /forgot-password?temp-forgot-password-token=<WIENER_TOKEN>
 temp-forgot-password-token=<WIENER_TOKEN>&username=carlos&new-password-1=<new-password>&new-password-2=<new-password>
 ```
 
-![Modified password reset request](../../screenshots/Authentication/03-password-reset-broken-logic/02-modified-reset-request.png)
+![Modified password reset request](../screenshots/Authentication/03-password-reset-broken-logic/02-modified-reset-request.png)
 
 The application accepted the request and returned:
 
@@ -159,7 +159,7 @@ This confirmed that the password-reset request using **Wiener's reset token** ha
 
 I then accessed Carlos's account page and confirmed that the lab was solved.
 
-![Carlos account and lab solved](../../screenshots/Authentication/03-password-reset-broken-logic/03-carlos-account-and-lab-solved.png)
+![Carlos account and lab solved](../screenshots/Authentication/03-password-reset-broken-logic/03-carlos-account-and-lab-solved.png)
 
 ---
 

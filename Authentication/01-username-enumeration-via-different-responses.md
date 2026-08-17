@@ -48,7 +48,7 @@ The attack used:
 * **Payload:** Provided candidate usernames
 * **Payload positions:** Username only
 
-![Username Intruder results](../../screenshots/Authentication/01-username-enumeration/01-username-intruder-results.png)
+![Username Intruder results](../screenshots/Authentication/01-username-enumeration/01-username-intruder-results.png)
 
 Initially, the response status codes and response lengths appeared to be the same for the candidate usernames.
 
@@ -76,7 +76,7 @@ Invalid username
 
 This confirmed that `app01` was a valid username.
 
-![app01 response confirmation](../../screenshots/Authentication/01-username-enumeration/02-app01-response-confirmation.png)
+![app01 response confirmation](../screenshots/Authentication/01-username-enumeration/02-app01-response-confirmation.png)
 
 The authentication behavior could therefore be summarized as:
 
@@ -119,7 +119,7 @@ I used:
 * **Payload:** Provided candidate passwords
 * **Payload position:** Password only
 
-![Password Intruder results](../../screenshots/Authentication/01-username-enumeration/03-password-intruder-results.png)
+![Password Intruder results](../screenshots/Authentication/01-username-enumeration/03-password-intruder-results.png)
 
 The candidate password:
 
@@ -146,7 +146,7 @@ I used these credentials to log in through the application.
 
 The account page was successfully accessible and the lab was completed.
 
-![Account access and lab solved](../../screenshots/Authentication/01-username-enumeration/04-account-access-and-lab-solved.png)
+![Account access and lab solved](../screenshots/Authentication/01-username-enumeration/04-account-access-and-lab-solved.png)
 
 ---
 

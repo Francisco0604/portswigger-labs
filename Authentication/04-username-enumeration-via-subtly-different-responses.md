@@ -105,7 +105,7 @@ amarillo:
 Invalid username or password
 ```
 
-![Username enumeration with Grep Extract](../../screenshots/Authentication/04-username-enumeration-subtly-different-responses/01-grep-extract-username-results.png)
+![Username enumeration with Grep Extract](../screenshots/Authentication/04-username-enumeration-subtly-different-responses/01-grep-extract-username-results.png)
 
 ---
 
@@ -139,7 +139,7 @@ The provided candidate password list was loaded into Intruder.
 
 The attack was used to identify a response that differed from the normal failed-login responses.
 
-![Password Intruder results](../../screenshots/Authentication/04-username-enumeration-subtly-different-responses/02-amarillo-password-intruder-results.png)
+![Password Intruder results](../screenshots/Authentication/04-username-enumeration-subtly-different-responses/02-amarillo-password-intruder-results.png)
 
 The candidate password:
 
@@ -171,7 +171,7 @@ The login succeeded and the account page was accessible.
 
 The PortSwigger lab was successfully completed.
 
-![Account access and lab solved](../../screenshots/Authentication/04-username-enumeration-subtly-different-responses/03-amarillo-account-and-lab-solved.png)
+![Account access and lab solved](../screenshots/Authentication/04-username-enumeration-subtly-different-responses/03-amarillo-account-and-lab-solved.png)
 
 ---
 

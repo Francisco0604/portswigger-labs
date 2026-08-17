@@ -71,7 +71,7 @@ Username + Password
 Account page
 ```
 
-![Authentication flow](../../screenshots/Authentication/02-2fa-simple-bypass/01-authentication-flow.png)
+![Authentication flow](../screenshots/Authentication/02-2fa-simple-bypass/01-authentication-flow.png)
 
 ---
 
@@ -128,7 +128,7 @@ However, the application also allowed:
 /my-account
 ```
 
-![Access without MFA](../../screenshots/Authentication/02-2fa-simple-bypass/02-access-without-mfa.png)
+![Access without MFA](../screenshots/Authentication/02-2fa-simple-bypass/02-access-without-mfa.png)
 
 ---
 
@@ -153,7 +153,7 @@ The application allowed access to Carlos's account page without requiring the se
 
 The lab was successfully completed.
 
-![Carlos account and lab solved](../../screenshots/Authentication/02-2fa-simple-bypass/03-carlos-account-and-lab-solved.png)
+![Carlos account and lab solved](../screenshots/Authentication/02-2fa-simple-bypass/03-carlos-account-and-lab-solved.png)
 
 ---
 

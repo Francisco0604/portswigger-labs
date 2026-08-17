@@ -115,7 +115,7 @@ and confirmed that the application treated the request as originating from a dif
 
 Changing the `X-Forwarded-For` value allowed the timing enumeration attack to continue without repeatedly triggering the same IP-based rate limit.
 
-![X-Forwarded-For rate-limit bypass](../../screenshots/Authentication/05-username-enumeration-via-response-timing/01-xff-rate-limit-bypass.png)
+![X-Forwarded-For rate-limit bypass](../screenshots/Authentication/05-username-enumeration-via-response-timing/01-xff-rate-limit-bypass.png)
 
 ---
 
@@ -229,7 +229,7 @@ Password: trustno1
 
 The successful request returned a different response from the normal failed-login requests.
 
-![Password Intruder results](../../screenshots/Authentication/05-username-enumeration-via-response-timing/02-an-password-intruder-results.png)
+![Password Intruder results](../screenshots/Authentication/05-username-enumeration-via-response-timing/02-an-password-intruder-results.png)
 
 ---
 
@@ -246,7 +246,7 @@ The login succeeded and the account page was accessible.
 
 The PortSwigger lab was successfully completed.
 
-![Account access and lab solved](../../screenshots/Authentication/05-username-enumeration-via-response-timing/03-an-account-and-lab-solved.png)
+![Account access and lab solved](../screenshots/Authentication/05-username-enumeration-via-response-timing/03-an-account-and-lab-solved.png)
 
 ---
 
