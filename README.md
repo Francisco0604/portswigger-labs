@@ -143,8 +143,7 @@ portswigger-labs/
 │   ├── 04-username-enumeration-via-subtly-different-responses.md
 │   ├── 05-username-enumeration-via-response-timing.md
 │   ├── 06-broken-brute-force-protection-ip-block.md
-│   ├── 07-username-enumeration-via-account-lock.md
-│   └── generate_lab06_lists.py
+│   └── 07-username-enumeration-via-account-lock.md
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
     ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
