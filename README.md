@@ -11,7 +11,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
 | Access Control | 13 | Completed |
-| Authentication | 6 | In progress |
+| Authentication | 7 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -75,6 +75,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 06 — Broken Brute-Force Protection, IP Block](Authentication/06-broken-brute-force-protection-ip-block.md)
   - **Vulnerability**: Flawed Brute-Force Protection Logic / Cross-Account Reset
   - **Concepts**: Burp Intruder (Pitchfork), Grep - Match, Payload Generation, Counter Reset Logic Flaw
+- [Lab 07 — Username Enumeration via Account Lock](Authentication/07-username-enumeration-via-account-lock.md)
+  - **Vulnerability**: Username Enumeration via Account-Lock Behavior
+  - **Concepts**: Account Lock Oracle, Burp Intruder (Sniper), Grep - Extract, Credential Testing
 
 ---
 
@@ -123,11 +126,16 @@ portswigger-labs/
 │       │   ├── 01-xff-rate-limit-bypass.png
 │       │   ├── 02-an-password-intruder-results.png
 │       │   └── 03-an-account-and-lab-solved.png
-│       └── 06-broken-brute-force-protection-ip-block/
-│           ├── 01-lockout-behavior.png
-│           ├── 02-counter-reset-with-wiener.png
-│           ├── 03-monkey-intruder-match.png
-│           └── 04-carlos-account-and-lab-solved.png
+│       ├── 06-broken-brute-force-protection-ip-block/
+│       │   ├── 01-lockout-behavior.png
+│       │   ├── 02-counter-reset-with-wiener.png
+│       │   ├── 03-monkey-intruder-match.png
+│       │   └── 04-carlos-account-and-lab-solved.png
+│       └── 07-username-enumeration-via-account-lock/
+│           ├── 01-account-lock-enumeration.png
+│           ├── 02-apps-lockout-confirmation.png
+│           ├── 03-mustang-password-result.png
+│           └── 04-apps-account-and-lab-solved.png
 ├── Authentication/
 │   ├── 01-username-enumeration-via-different-responses.md
 │   ├── 02-2fa-simple-bypass.md
@@ -135,6 +143,7 @@ portswigger-labs/
 │   ├── 04-username-enumeration-via-subtly-different-responses.md
 │   ├── 05-username-enumeration-via-response-timing.md
 │   ├── 06-broken-brute-force-protection-ip-block.md
+│   ├── 07-username-enumeration-via-account-lock.md
 │   └── generate_lab06_lists.py
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
