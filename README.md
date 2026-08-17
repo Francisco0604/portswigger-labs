@@ -11,7 +11,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
 | Access Control | 13 | Completed |
-| Authentication | 7 | In progress |
+| Authentication | 8 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -78,6 +78,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 07 — Username Enumeration via Account Lock](Authentication/07-username-enumeration-via-account-lock.md)
   - **Vulnerability**: Username Enumeration via Account-Lock Behavior
   - **Concepts**: Account Lock Oracle, Burp Intruder (Sniper), Grep - Extract, Credential Testing
+- [Lab 08 — 2FA Broken Logic](Authentication/08-2fa-broken-logic.md)
+  - **Vulnerability**: Broken 2FA Logic / Improper User Binding
+  - **Concepts**: Authentication State Analysis, Cookie Manipulation (`verify=carlos`), Session Independence, ffuf MFA Brute Force
 
 ---
 
@@ -131,11 +134,16 @@ portswigger-labs/
 │       │   ├── 02-counter-reset-with-wiener.png
 │       │   ├── 03-monkey-intruder-match.png
 │       │   └── 04-carlos-account-and-lab-solved.png
-│       └── 07-username-enumeration-via-account-lock/
-│           ├── 01-account-lock-enumeration.png
-│           ├── 02-apps-lockout-confirmation.png
-│           ├── 03-mustang-password-result.png
-│           └── 04-apps-account-and-lab-solved.png
+│       ├── 07-username-enumeration-via-account-lock/
+│       │   ├── 01-account-lock-enumeration.png
+│       │   ├── 02-apps-lockout-confirmation.png
+│       │   ├── 03-mustang-password-result.png
+│       │   └── 04-apps-account-and-lab-solved.png
+│       └── 08-2fa-broken-logic/
+│           ├── 01-2fa-flow-and-verify-cookie.png
+│           ├── 02-carlos-verify-manipulation.png
+│           ├── 03-0300-ffuf-match.png
+│           └── 04-carlos-account-and-lab-solved.png
 ├── Authentication/
 │   ├── 01-username-enumeration-via-different-responses.md
 │   ├── 02-2fa-simple-bypass.md
@@ -143,7 +151,8 @@ portswigger-labs/
 │   ├── 04-username-enumeration-via-subtly-different-responses.md
 │   ├── 05-username-enumeration-via-response-timing.md
 │   ├── 06-broken-brute-force-protection-ip-block.md
-│   └── 07-username-enumeration-via-account-lock.md
+│   ├── 07-username-enumeration-via-account-lock.md
+│   └── 08-2fa-broken-logic.md
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
     ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
