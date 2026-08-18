@@ -11,7 +11,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
 | Access Control | 13 | Completed |
-| Authentication | 10 | In progress |
+| Authentication | 11 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -87,6 +87,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 10 — Offline Password Cracking](Authentication/10-offline-password-cracking.md)
   - **Vulnerability**: Stored Cross-Site Scripting (XSS) / Sensitive Cookie Disclosure / Predictable Persistent Authentication Cookie
   - **Concepts**: Stored XSS, JavaScript Cookie Exfiltration (`document.cookie`), Exploit Server, Base64 Decoding, Offline MD5 Cracking, Account Takeover
+- [Lab 11 — Password Reset Poisoning via Middleware](Authentication/11-password-reset-poisoning-via-middleware.md)
+  - **Vulnerability**: Password Reset Poisoning via Attacker-Controlled `X-Forwarded-Host`
+  - **Concepts**: Reverse Proxy / Middleware Headers, `X-Forwarded-Host` Manipulation, Password Reset Poisoning, Token Exfiltration, Account Takeover
 
 ---
 
@@ -156,12 +159,17 @@ portswigger-labs/
 │       │   ├── 03-md5-hash-verification.png
 │       │   ├── 04-carlos-cookie-intruder-result.png
 │       │   └── 05-carlos-account-and-lab-solved.png
-│       └── 10-offline-password-cracking/
-│           ├── 01-stay-logged-in-cookie-analysis.png
-│           ├── 02-xss-comment-payload.png
-│           ├── 03-carlos-cookie-stolen.png
-│           ├── 04-hash-cracked.png
-│           └── 05-carlos-account-deleted-and-lab-solved.png
+│       ├── 10-offline-password-cracking/
+│       │   ├── 01-stay-logged-in-cookie-analysis.png
+│       │   ├── 02-xss-comment-payload.png
+│       │   ├── 03-carlos-cookie-stolen.png
+│       │   ├── 04-hash-cracked.png
+│       │   └── 05-carlos-account-deleted-and-lab-solved.png
+│       └── 11-password-reset-poisoning-via-middleware/
+│           ├── 01-password-reset-request.png
+│           ├── 02-poisoned-reset-email.png
+│           ├── 03-carlos-token-exploit-log.png
+│           └── 04-carlos-account-and-lab-solved.png
 ├── Authentication/
 │   ├── 01-username-enumeration-via-different-responses.md
 │   ├── 02-2fa-simple-bypass.md
@@ -172,7 +180,8 @@ portswigger-labs/
 │   ├── 07-username-enumeration-via-account-lock.md
 │   ├── 08-2fa-broken-logic.md
 │   ├── 09-brute-forcing-stay-logged-in-cookie.md
-│   └── 10-offline-password-cracking.md
+│   ├── 10-offline-password-cracking.md
+│   └── 11-password-reset-poisoning-via-middleware.md
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
     ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
