@@ -11,7 +11,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
 | Access Control | 13 | Completed |
-| Authentication | 11 | In progress |
+| Authentication | 12 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -90,6 +90,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 11 — Password Reset Poisoning via Middleware](Authentication/11-password-reset-poisoning-via-middleware.md)
   - **Vulnerability**: Password Reset Poisoning via Attacker-Controlled `X-Forwarded-Host`
   - **Concepts**: Reverse Proxy / Middleware Headers, `X-Forwarded-Host` Manipulation, Password Reset Poisoning, Token Exfiltration, Account Takeover
+- [Lab 12 — Password Brute-Force via Password Change](Authentication/12-password-brute-force-via-password-change.md)
+  - **Vulnerability**: Password Brute-Forcing through Flawed Password-Change Logic / Response Oracle
+  - **Concepts**: Password-Change Functionality, Session Cookie Analysis, Username Parameter Manipulation, Response Oracle (`New passwords do not match` vs `Current password is incorrect`), Burp Intruder (Sniper), Credential Verification, Account Takeover
 
 ---
 
@@ -165,10 +168,16 @@ portswigger-labs/
 │       │   ├── 03-carlos-cookie-stolen.png
 │       │   ├── 04-hash-cracked.png
 │       │   └── 05-carlos-account-deleted-and-lab-solved.png
-│       └── 11-password-reset-poisoning-via-middleware/
-│           ├── 01-password-reset-request.png
-│           ├── 02-poisoned-reset-email.png
-│           ├── 03-carlos-token-exploit-log.png
+│       ├── 11-password-reset-poisoning-via-middleware/
+│       │   ├── 01-password-reset-request.png
+│       │   ├── 02-poisoned-reset-email.png
+│       │   ├── 03-carlos-token-exploit-log.png
+│       │   └── 04-carlos-account-and-lab-solved.png
+│       └── 12-password-brute-force-via-password-change/
+│           ├── 01-password-change-recon.png
+│           ├── 02-password-change-intruder-setup.png
+│           ├── 03-carlos-password-found.png
+│           ├── 03b-incorrect-password-response.png
 │           └── 04-carlos-account-and-lab-solved.png
 ├── Authentication/
 │   ├── 01-username-enumeration-via-different-responses.md
@@ -181,7 +190,8 @@ portswigger-labs/
 │   ├── 08-2fa-broken-logic.md
 │   ├── 09-brute-forcing-stay-logged-in-cookie.md
 │   ├── 10-offline-password-cracking.md
-│   └── 11-password-reset-poisoning-via-middleware.md
+│   ├── 11-password-reset-poisoning-via-middleware.md
+│   └── 12-password-brute-force-via-password-change.md
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
     ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
