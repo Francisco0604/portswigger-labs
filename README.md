@@ -11,7 +11,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 | Category | Completed labs | Status |
 | :--- | :--- | :--- |
 | Access Control | 13 | Completed |
-| Authentication | 8 | In progress |
+| Authentication | 9 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -81,6 +81,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 08 — 2FA Broken Logic](Authentication/08-2fa-broken-logic.md)
   - **Vulnerability**: Broken 2FA Logic / Improper User Binding
   - **Concepts**: Authentication State Analysis, Cookie Manipulation (`verify=carlos`), Session Independence, ffuf MFA Brute Force
+- [Lab 09 — Brute-forcing a Stay-Logged-In Cookie](Authentication/09-brute-forcing-stay-logged-in-cookie.md)
+  - **Vulnerability**: Weak / Predictable Persistent Authentication Cookie
+  - **Concepts**: Cookie Reverse-Engineering, Base64 Decoding, MD5 Hashing, Python Payload Generation, Burp Intruder (Sniper)
 
 ---
 
@@ -139,11 +142,17 @@ portswigger-labs/
 │       │   ├── 02-apps-lockout-confirmation.png
 │       │   ├── 03-mustang-password-result.png
 │       │   └── 04-apps-account-and-lab-solved.png
-│       └── 08-2fa-broken-logic/
-│           ├── 01-2fa-flow-and-verify-cookie.png
-│           ├── 02-carlos-verify-manipulation.png
-│           ├── 03-0300-ffuf-match.png
-│           └── 04-carlos-account-and-lab-solved.png
+│       ├── 08-2fa-broken-logic/
+│       │   ├── 01-2fa-flow-and-verify-cookie.png
+│       │   ├── 02-carlos-verify-manipulation.png
+│       │   ├── 03-0300-ffuf-match.png
+│       │   └── 04-carlos-account-and-lab-solved.png
+│       └── 09-brute-forcing-stay-logged-in-cookie/
+│           ├── 01-stay-logged-in-cookie-intercepted.png
+│           ├── 02-base64-decoded-cookie.png
+│           ├── 03-md5-hash-verification.png
+│           ├── 04-carlos-cookie-intruder-result.png
+│           └── 05-carlos-account-and-lab-solved.png
 ├── Authentication/
 │   ├── 01-username-enumeration-via-different-responses.md
 │   ├── 02-2fa-simple-bypass.md
@@ -152,7 +161,8 @@ portswigger-labs/
 │   ├── 05-username-enumeration-via-response-timing.md
 │   ├── 06-broken-brute-force-protection-ip-block.md
 │   ├── 07-username-enumeration-via-account-lock.md
-│   └── 08-2fa-broken-logic.md
+│   ├── 08-2fa-broken-logic.md
+│   └── 09-brute-forcing-stay-logged-in-cookie.md
 └── access-control/
     ├── 01-unprotected-admin-functionality.md
     ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
