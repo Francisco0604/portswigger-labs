@@ -12,7 +12,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 | :--- | :--- | :--- |
 | Access Control | 13 | Completed |
 | Authentication | 12 | In progress |
-| OAuth 2.0 | 1 | In progress |
+| OAuth 2.0 | 2 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -99,6 +99,9 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 01 — Authentication Bypass via OAuth Implicit Flow](oauth/01-authentication-bypass-via-oauth-implicit-flow/README.md)
   - **Vulnerability**: Authentication Bypass via Flawed OAuth Implicit Flow Validation
   - **Concepts**: OAuth 2.0 Flow Analysis, Client-Side Parameter Tampering, Burp Suite Intercept, Trust Boundary Analysis
+- [Lab 02 — SSRF via OpenID Dynamic Client Registration](oauth/02-ssrf-via-openid-dynamic-client-registration/README.md)
+  - **Vulnerability**: Server-Side Request Forgery (SSRF) via OpenID Dynamic Client Registration
+  - **Concepts**: OpenID Connect Discovery, Dynamic Client Registration (`/reg`), `logo_uri` SSRF Sink, AWS Instance Metadata (`169.254.169.254`), IAM Credential Extraction
 
 ---
 
@@ -213,11 +216,21 @@ portswigger-labs/
 │   ├── 12-multi-step-process-with-no-access-control-on-one-step.md
 │   └── 13-referer-based-access-control.md
 └── oauth/
-    └── 01-authentication-bypass-via-oauth-implicit-flow/
+    ├── 01-authentication-bypass-via-oauth-implicit-flow/
+    │   ├── README.md
+    │   └── screenshots/
+    │       ├── 01-authenticate-request-tampering.png
+    │       └── 02-carlos-account-and-lab-solved.png
+    └── 02-ssrf-via-openid-dynamic-client-registration/
         ├── README.md
         └── screenshots/
-            ├── 01-authenticate-request-tampering.png
-            └── 02-carlos-account-and-lab-solved.png
+            ├── 01-normal-oauth-flow-account.png
+            ├── 02-dynamic-registration-empty-request.png
+            ├── 03-dynamic-client-registration.png
+            ├── 04-ssrf-client-registration.png
+            ├── 05-ssrf-logo-endpoint.png
+            ├── 06-submit-solution.png
+            └── 07-lab-completed.png
 ```
 
 ---
