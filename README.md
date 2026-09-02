@@ -12,6 +12,7 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 | :--- | :--- | :--- |
 | Access Control | 13 | Completed |
 | Authentication | 12 | In progress |
+| OAuth 2.0 | 1 | In progress |
 
 ## 📂 Categories & Lab Reports
 
@@ -93,6 +94,11 @@ General reusable concepts are maintained separately in the [Cybersecurity Knowle
 - [Lab 12 — Password Brute-Force via Password Change](Authentication/12-password-brute-force-via-password-change.md)
   - **Vulnerability**: Password Brute-Forcing through Flawed Password-Change Logic / Response Oracle
   - **Concepts**: Password-Change Functionality, Session Cookie Analysis, Username Parameter Manipulation, Response Oracle (`New passwords do not match` vs `Current password is incorrect`), Burp Intruder (Sniper), Credential Verification, Account Takeover
+
+### 🌐 OAuth 2.0
+- [Lab 01 — Authentication Bypass via OAuth Implicit Flow](oauth/01-authentication-bypass-via-oauth-implicit-flow/README.md)
+  - **Vulnerability**: Authentication Bypass via Flawed OAuth Implicit Flow Validation
+  - **Concepts**: OAuth 2.0 Flow Analysis, Client-Side Parameter Tampering, Burp Suite Intercept, Trust Boundary Analysis
 
 ---
 
@@ -192,20 +198,26 @@ portswigger-labs/
 │   ├── 10-offline-password-cracking.md
 │   ├── 11-password-reset-poisoning-via-middleware.md
 │   └── 12-password-brute-force-via-password-change.md
-└── access-control/
-    ├── 01-unprotected-admin-functionality.md
-    ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
-    ├── 03-user-role-controlled-by-request-parameter.md
-    ├── 04-user-role-can-be-modified-in-user-profile.md
-    ├── 05-user-id-controlled-by-request-parameter.md
-    ├── 06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md
-    ├── 07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md
-    ├── 08-user-id-controlled-by-request-parameter-with-password-disclosure.md
-    ├── 09-insecure-direct-object-references.md
-    ├── 10-url-based-access-control-can-be-circumvented.md
-    ├── 11-method-based-access-control-can-be-circumvented.md
-    ├── 12-multi-step-process-with-no-access-control-on-one-step.md
-    └── 13-referer-based-access-control.md
+├── access-control/
+│   ├── 01-unprotected-admin-functionality.md
+│   ├── 02-unprotected-admin-functionality-with-unpredictable-url.md
+│   ├── 03-user-role-controlled-by-request-parameter.md
+│   ├── 04-user-role-can-be-modified-in-user-profile.md
+│   ├── 05-user-id-controlled-by-request-parameter.md
+│   ├── 06-user-id-controlled-by-request-parameter-with-unpredictable-user-ids.md
+│   ├── 07-user-id-controlled-by-request-parameter-with-data-leakage-in-redirect.md
+│   ├── 08-user-id-controlled-by-request-parameter-with-password-disclosure.md
+│   ├── 09-insecure-direct-object-references.md
+│   ├── 10-url-based-access-control-can-be-circumvented.md
+│   ├── 11-method-based-access-control-can-be-circumvented.md
+│   ├── 12-multi-step-process-with-no-access-control-on-one-step.md
+│   └── 13-referer-based-access-control.md
+└── oauth/
+    └── 01-authentication-bypass-via-oauth-implicit-flow/
+        ├── README.md
+        └── screenshots/
+            ├── 01-authenticate-request-tampering.png
+            └── 02-carlos-account-and-lab-solved.png
 ```
 
 ---
