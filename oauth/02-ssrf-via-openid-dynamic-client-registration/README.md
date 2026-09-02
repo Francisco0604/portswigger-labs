@@ -220,10 +220,6 @@ along with client metadata including a newly generated `client_id`.
 
 This demonstrated that an attacker could dynamically register an arbitrary client application without requiring authentication or administrative privileges.
 
-### Evidence
-
-![Dynamic client registration](screenshots/03-dynamic-client-registration.png)
-
 ---
 
 # 5. Identifying the SSRF Sink
@@ -273,7 +269,7 @@ iKS3DjUO9Jjs3GqpVYgEU
 
 ### Evidence
 
-![SSRF client registration](screenshots/04-ssrf-client-registration.png)
+![SSRF client registration](screenshots/03-ssrf-client-registration.png)
 
 ---
 
@@ -305,7 +301,7 @@ This confirmed the SSRF vulnerability.
 
 ### Evidence
 
-![SSRF logo endpoint](screenshots/05-ssrf-logo-endpoint.png)
+![SSRF logo endpoint](screenshots/04-ssrf-logo-endpoint.png)
 
 ---
 
@@ -335,7 +331,7 @@ I submitted the retrieved secret access key using the lab's **Submit solution** 
 
 ### Evidence
 
-![Submit solution](screenshots/06-submit-solution.png)
+![Submit solution](screenshots/05-submit-solution.png)
 
 ---
 
@@ -345,7 +341,7 @@ The lab accepted the extracted secret access key and confirmed completion.
 
 ### Evidence
 
-![Lab completed](screenshots/07-lab-completed.png)
+![Lab completed](screenshots/06-lab-completed.png)
 
 ---
 

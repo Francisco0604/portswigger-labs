@@ -226,11 +226,10 @@ portswigger-labs/
         └── screenshots/
             ├── 01-normal-oauth-flow-account.png
             ├── 02-dynamic-registration-empty-request.png
-            ├── 03-dynamic-client-registration.png
-            ├── 04-ssrf-client-registration.png
-            ├── 05-ssrf-logo-endpoint.png
-            ├── 06-submit-solution.png
-            └── 07-lab-completed.png
+            ├── 03-ssrf-client-registration.png
+            ├── 04-ssrf-logo-endpoint.png
+            ├── 05-submit-solution.png
+            └── 06-lab-completed.png
 ```
 
 ---
